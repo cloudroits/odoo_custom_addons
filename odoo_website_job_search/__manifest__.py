@@ -33,7 +33,7 @@
     'license': 'AGPL-3',
     'data': ['views/job_view.xml',
              ],
-    'images': ['static/description/odoo_website_job_search_banner.png'],
+    'images': ['static/description/images/odoo_website_job_search_banner.png'],
     'installable': True,
     'auto_install': False,
     'application': False,
