@@ -96,21 +96,3 @@ class RecruitmentInherit(WebsiteHrRecruitment):
             'department_id': department,
             'office_id': office_id,
         })
-
-    
-    @http.route('/job/search', csrf=False, type="http", methods=['POST', 'GET'], auth="public", website=True)
-    def search_contents(self, **kw):
-        """get search result for auto suggestions"""
-        strings = '%' + kw.get('name') + '%'
-        try:
-            domain = [('website_published', '=', True)]
-            job = request.env['hr.job'].with_user(SUPERUSER_ID).search(domain)
-            sql = """select id as res_id, name as name, name as value from hr_job where name ILIKE '{}'"""
-            extra_query = ' and is_published = TRUE'
-            limit = " limit 15"
-            qry = sql + extra_query + limit
-            request.cr.execute(qry.format(strings, tuple(job and job.ids)))
-            name = request.cr.dictfetchall()
-        except:
-            name = {'name': 'None', 'value': 'None'}
-        return json.dumps(name)
