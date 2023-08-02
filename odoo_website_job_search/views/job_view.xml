@@ -19,8 +19,7 @@
                 <t t-call="odoo_website_job_search.job_search">
                 </t>
             </xpath>
-        </template>        
-        
+        </template>                
         <template id="404">
             <t t-call="website.layout">
                 <div id="wrap">
