@@ -96,7 +96,7 @@ class RecruitmentInherit(WebsiteHrRecruitment):
             'department_id': department,
             'office_id': office_id,
         })
-    @http.route('/job/search', csrf=False, type="http", methods=['POST', 'GET'], auth="public", website=True)
+@http.route('/job/search', csrf=False, type="http", methods=['POST', 'GET'], auth="public", website=True)
     def search_contents(self, **kw):
         """get search result for auto suggestions"""
         search_string = '%' + kw.get('name') + '%'
