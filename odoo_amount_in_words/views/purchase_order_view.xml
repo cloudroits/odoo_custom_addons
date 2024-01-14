@@ -6,11 +6,7 @@
     <field name="inherit_id" ref="purchase.purchase_order_form"/>
     <field name="arch" type="xml">
         <xpath expr="//field[@name='notes']" position="before">
-           <group colspan="2">
-                <div style="padding-top:10px;padding-bottom:10px;">
-                    <label for="amount_words"/><field name="amount_words"/>
-                </div>
-            </group>
+            <field name="amount_words"/>
         </xpath>
     </field>
     </record>
