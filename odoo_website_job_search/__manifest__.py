@@ -20,7 +20,7 @@
 
 {
     'name': 'Website Job Search',
-    'version': '15.0',
+    'version': '16.0',
     "category": "Website",
     'author': 'Cloudroits',
     'website': "https://www.cloudroits.com",
