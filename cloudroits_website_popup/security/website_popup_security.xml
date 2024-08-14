@@ -1,0 +1,36 @@
+<odoo>
+    <!-- New Category for Website Popup Settings -->
+    <record id="module_category_website_popup" model="ir.module.category">
+        <field name="name">Website Popup Settings</field> <!-- New category name -->
+        <field name="sequence">10</field> <!-- Order of appearance in settings -->
+    </record>
+    <!-- Security group for Popup Image Manager -->
+    <record id="group_website_popup_manager" model="res.groups">
+        <field name="name">Popup Image Manager</field>
+        <field name="category_id" ref="module_category_website_popup"/>
+    </record>
+
+    <!-- Record rule to allow public users to read the popup image -->
+    <record id="website_popup_image_rule_public" model="ir.rule">
+        <field name="name">Public: Access Popup Images</field>
+        <field name="model_id" ref="model_website_popup_image"/>
+        <field name="groups" eval="[(4, ref('base.group_public'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+
+    <!-- Record rule to allow portal users to read the popup image -->
+    <record id="website_popup_image_rule_portal" model="ir.rule">
+        <field name="name">Portal: Access Popup Images</field>
+        <field name="model_id" ref="model_website_popup_image"/>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+</odoo>
