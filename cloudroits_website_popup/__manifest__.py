@@ -5,6 +5,7 @@
     'summary': 'Easily Create and Manage Popups Across Your Odoo Website',
     'author': 'Cloudroits',
     'depends': ['website'],
+    'license': 'AGPL-3', 
     'data': [        
         'security/website_popup_security.xml',  # Security group
         'security/ir.model.access.csv', 
