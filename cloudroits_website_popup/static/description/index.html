@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Popup Image - Odoo Module</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        p {
+            margin: 10px 0;
+            color: #555;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #0e4d8b;
+        }
+        .instructions ul, .instructions ol {
+            padding-left: 20px;
+        }
+        .instructions li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Website Popup Image - Odoo Module</h1>
+        
+        <br/>
+        <div class="section">
+            <h2>Module Overview</h2>
+            <p>This Odoo module allows you to display customizable image popups on selected pages of your website. The popup can include an image, a button with custom text, and a link. You can choose which pages the popup should be displayed on, as well as which websites if you're managing multiple sites within Odoo.</p>
+        </div>
+        
+        <br/>
+        <div class="section">
+            <h2>Features</h2>
+            <ul>
+                <li>Display image popups on selected pages of your website.</li>
+                <li>Customizable button text and link within the popup.</li>
+                <li>Choose which websites and pages the popup should appear on.</li>
+                <li>Easy configuration through the Odoo backend.</li>
+                <li>Responsive design ensures the popup looks great on all devices.</li>
+            </ul>
+        </div>
+        
+        <br/>
+        <div class="section instructions">
+            <h2>How to Use the App</h2>
+            <p>Follow these steps to configure and use the Website Popup Image module:</p>
+            <ol>
+                <li>Navigate to the Odoo backend and go to <strong>Website</strong> > <strong>Configuration</strong> > <strong>Popup Images</strong>.</li>
+                <li>Click on <strong>Create</strong> to add a new popup configuration.</li>
+                <li>Fill in the following fields:
+                    <ul>
+                        <li><strong>Name:</strong> Enter a name for the popup configuration.</li>
+                        <li><strong>Popup Image:</strong> Upload the image that will be displayed in the popup.</li>
+                        <li><strong>Websites:</strong> Select the websites where the popup should appear.</li>
+                        <li><strong>Button Text:</strong> (Optional) Enter the text that will be displayed on the button inside the popup.</li>
+                        <li><strong>Button Link:</strong> (Optional) Provide a URL where users will be directed when they click the button.</li>
+                        <li><strong>Page URLs:</strong> Specify the URLs where the popup should be displayed. Separate multiple URLs with commas. Leave this field empty to show the popup on all pages of the selected website(s).</li>
+                    </ul>
+                </li>
+                <li>Example values for <strong>Page URLs</strong>:
+                    <ul>
+                        <li>To display the popup on the home page: <code>/</code></li>
+                        <li>To display the popup on a specific page like the shop page: <code>/shop</code></li>
+                        <li>To display the popup on multiple pages: <code>/, /shop, /contactus</code></li>
+                    </ul>
+                </li>
+                <li>Save your configuration.</li>
+                <li>Visit the specified pages on your website to ensure the popup appears as expected.</li>
+            </ol>
+            <p>Note: Ensure that the JavaScript and CSS files are correctly loaded on your website to display the popup correctly.</p>
+        </div>
+        
+        <br/>
+        <div class="section instructions">
+            <h2>User Access Configuration</h2>
+            <p>To allow a specific user to manage the popup settings, follow these steps:</p>
+            <ol>
+                <li>Navigate to the Odoo backend and go to <strong>Settings</strong> > <strong>Users & Companies</strong> > <strong>Users</strong>.</li>
+                <li>Select the user you want to grant access to.</li>
+                <li>Under the <strong>Access Rights</strong> tab, assign the user to the <strong>Popup Image Manager</strong> group found under <strong>Website Popup Settings</strong>.</li>
+                <li>Ensure the user has the necessary permissions to manage the Website to Website and configuration settings, such as <strong>Website Editor</strong> or <strong>Website Manager</strong>.</li>
+                <li>Save the user configuration.</li>
+            </ol>
+            <p>With these settings, the user will be able to access and manage the popup configurations as needed.</p>
+        </div>
+        
+        <br/>
+        <div class="section">
+            <h2>Screenshots</h2>
+            <br/>
+            <h3>User Settings</h3>
+            <img src="screenshot_user_settings.png" alt="User Settings" style="max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">    
+            <br/>        
+            <h3>Popup Configuration</h3>
+            <img src="screenshot_popup_config.png" alt="Popup Configuration" style="max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <br/>
+            <h3>Popup Display on Website</h3>
+            <img src="screenshot_popup_display.png" alt="Popup Display" style="max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <br/>
+        </div>
+        
+        <br/>
+        <div class="section">
+            <h2>Contact Information</h2>
+            <p>For more information or support, please contact:</p>
+            <p><strong>Cloudroits</strong></p>
+            <p>Website: <a href="https://www.cloudroits.com" target="_blank">https://www.cloudroits.com</a></p>
+            <p>Email: <a href="mailto:info@cloudroits.com">info@cloudroits.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
