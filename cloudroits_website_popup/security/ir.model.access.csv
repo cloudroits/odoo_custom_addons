@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_popup_image_manager,access_website_popup_image_manager,model_website_popup_image,cloudroits_website_popup.group_website_popup_manager,1,1,1,1
+access_website_popup_image_public,access_website_popup_image_public,model_website_popup_image,base.group_public,1,0,0,0
+access_website_popup_image_portal,access_website_popup_image_portal,model_website_popup_image,base.group_portal,1,0,0,0
